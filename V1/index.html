@@ -11,9 +11,25 @@
 <head>
     <!-- M2LO4: embedded style -->
     <style>
-        h1{
+        /* M2LO5 contextual selectors */
+        section h1{
             /* M2LO13 Changes h1 default size  */
             font-size: 3em;
+        }
+
+        /* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+        a[href="#home-nav"]{
+            text-decoration: none;
+        }
+
+        /* M2LO11 Demonstrate a pseudo-classes */
+        h2:first-of-type {
+            color: #c70039;
+        }
+
+        /* M2LO11 Demonstrate a pseudo-element selector */
+        article>p::first-letter{
+            font-size: 2em;
         }
     </style>
 
@@ -49,8 +65,9 @@
             </em>
         </p>
         <article>
+            <!-- M2LO3 inhereitence text color white -->
             <p>
-                A look at the pandemic
+                A look at the pandemic and how it has spread across the United States. 
             </p>
         </article>
     </section>
