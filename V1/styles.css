@@ -7,7 +7,10 @@ Color pallete via: https: //colorhunt.co/palette/226115
 */
 body{
     /* M2LO15 Changes body color  */
-    /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
+    /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
+        Progressive enhancement is used to make sure older browser can display content from newer webpages.
+        In this case rgb background is with the same value as hsl value because older browser did not yet support hsl colors.
+    */
     background-color: rgb(17, 29, 94);
     background-color: hsl(231, 96%, 22%);
     /* M2LO3 presedence line 39 */
