@@ -1,0 +1,62 @@
+/* 
+Name: Carlo Santos
+Project V1 01-22-2021
+styles css file is used to format the index and about page's styling and format.
+M2LO4 - External style
+Color pallete via: https: //colorhunt.co/palette/226115
+*/
+body{
+    /* M2LO15 - Changes body color  */
+    /* M2LO14 - Demonstrate and explain the use of progressive enhancement in CSS
+        Progressive enhancement is used to make sure older browser can display content from newer webpages.
+        In this case rgb background is with the same value as hsl value because older browser did not yet support hsl colors.
+    */
+    background-color: rgb(17, 29, 94);
+    background-color: hsl(231, 96%, 22%);
+    /* M2LO3 - presedence line 39 */
+    color: black;
+}
+
+nav {
+    background-color: #F37121;
+}
+
+nav>ul>li>a:link {
+    text-decoration: none;
+}
+
+/* M2LO5 - contextual selectors */
+nav > ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    font-size: 1.5em;
+    padding-right: 10px;
+    /* M2LO12 - changes unordered list from vertical to horizontal orientation */
+    display: inline;
+}
+
+h1 {
+    color: #c70039;
+}
+
+article {
+    /* M2LO3 - presedence */
+    /* M2LO3 - inheritance html line 52 */
+    color: white;
+    font-size: 1em;
+}
+
+footer {
+    color: white;
+    background-color: #F37121;
+}
+
+.image-caption {
+    color: white;
+}
+
+aside {
+    color: white;
+}
