@@ -2,39 +2,43 @@
 Name: Carlo Santos
 Project V1 01-22-2021
 styles css file is used to format the index and about page's styling and format.
-M2LO4 - External style
 Color pallete via: https: //colorhunt.co/palette/226115
 */
-body{
-    /* M2LO15 - Changes body color  */
-    /* M2LO14 - Demonstrate and explain the use of progressive enhancement in CSS
-        Progressive enhancement is used to make sure older browser can display content from newer webpages.
-        In this case rgb background is with the same value as hsl value because older browser did not yet support hsl colors.
-    */
-    background-color: rgb(17, 29, 94);
-    background-color: hsl(231, 96%, 22%);
-    /* M2LO3 - presedence line 39 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    background-color: #94b5c0;
     color: black;
+    font-family: 'Roboto',
+    sans-serif;
 }
 
 nav {
-    background-color: #F37121;
+    background-color: #c70039;
+    margin: 0 auto;
+    padding: 1.2em;
 }
 
 nav>ul>li>a:link {
     text-decoration: none;
 }
 
-/* M2LO5 - contextual selectors */
-nav > ul {
+nav>ul>li>a:visited {
+    color: #161d6f;
+}
+
+nav>ul>li>a:link {
+    color: #161d6f;
+}
+
+nav>ul {
     list-style: none;
 }
 
-nav > ul > li {
+nav>ul>li {
     font-size: 1.5em;
-    padding-right: 10px;
-    /* M2LO12 - changes unordered list from vertical to horizontal orientation */
+    padding-right: 1.5em;
     display: inline;
+    text-shadow: 1px 1px #1687a7;
 }
 
 h1 {
@@ -42,15 +46,13 @@ h1 {
 }
 
 article {
-    /* M2LO3 - presedence */
-    /* M2LO3 - inheritance html line 52 */
     color: white;
     font-size: 1em;
 }
 
 footer {
     color: white;
-    background-color: #F37121;
+    background-color: #c70039;
 }
 
 .image-caption {
@@ -59,4 +61,115 @@ footer {
 
 aside {
     color: white;
+}
+
+div#main-title h1 {
+    font-size: 4em;
+    text-shadow: 4px 4px #111d5e;
+}
+
+a[href="#home-nav"] {
+    text-decoration: none;
+}
+
+/* nav#home-nav ul {
+    
+} */
+
+figcaption > p > em > a:link{
+    color: #c7ffd8;
+}
+
+figcaption>p>em>a:visited {
+    color: #ad6c80;
+}
+
+h2:first-of-type {
+    color: #c70039;
+}
+
+article>p::first-letter {
+    font-size: 2em;
+}
+
+figure#lead-img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: .75em;
+}
+
+figure#lead-img img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption > p {
+    margin-top: 0;
+}
+
+div#numbers {
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+}
+
+div#main {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+div#section-right {
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+} 
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.inner-section {
+    height: 100%;
+    width: auto;
+}
+
+div#main-title {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.column {
+    float: left;
+    width: 33.33%;
+    padding: .1em;
+    /* height: 500px; */
+}
+
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul#current-numbers {
+    list-style: none;
+    text-align: left;
+    padding: 0%;
+}
+
+ul#current-numbers li {
+    color: #111d5e;
+    font-size: 1.5em;
+    padding: .5em 0 .5em 0;
+    border-color: white;
+    border-style: none none solid none;
 }

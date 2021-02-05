@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Name: Carlo Santos
-     Project V1
-     01-22-2021 
+     Project V2
+     02-02-2021 
      index html file is landing page of website. 
      It will have overview information of the purpose and content
      of the website
@@ -9,44 +9,19 @@
 <html lang="en">
 
 <head>
-    <!-- M2LO4 - embedded style -->
-    <style>
-        /* M2LO5 - contextual selectors */
-        section h1{
-            /* M2LO13 Changes h1 default size  */
-            font-size: 3em;
-        }
-
-        /* M2LO7 - Demonstrate a CSS attribute selector other than class or id */
-        a[href="#home-nav"]{
-            text-decoration: none;
-        }
-
-        /* M2LO11 - Demonstrate a pseudo-classes */
-        h2:first-of-type {
-            color: #c70039;
-        }
-
-        /* M2LO11 - Demonstrate a pseudo-element selector */
-        article>p::first-letter{
-            font-size: 2em;
-        }
-    </style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year of Covid</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- M1LO12 - Create navigation using unordered lists (HTML) -->
-    <!-- M2LO6 - element id -->
     <!-- Main navigation bar -->
     <nav id="home-nav">
         <ul>
             <li>
-                <!-- M1LO13 - site navigation -->
                 <a href="index.html">Home</a>
             </li>
             <li>
@@ -54,52 +29,74 @@
             </li>
         </ul>
     </nav>
-    <!-- Site overview section -->
-    <section>
-        <h1>Year of Covid</h1>
-        <!-- M1LO9 - Demonstrate the use of inline images (HTML) -->
-        <img src="elena-mozhvilo-I9CwZchCIqA-unsplash-1024.jpg" alt="Header Image">
-        <!-- M2LO6 - element class -->
-        <p class="image-caption">
-            <em>
-                <!-- M1LO13 - external -->
-                Image by Elena Mozhvilo via <a href="https://unsplash.com/">unsplash</a>.
-            </em>
-        </p>
-        <article>
-            <!-- M2LO3 - inhereitence text color white -->
-            <p>
-                A look at the pandemic and how it has spread across the United States. 
-            </p>
-        </article>
-    </section>
-    <!-- Side section containing covid statistics -->
-<aside>
-    <!-- M1LO10 - Demonstrate the use of special characters from extended character sets (HTML, use entities, not
-    cut-and-pasted unicode characters -->
-    <h2>Covid 2020 Stats:&ast;</h2>
-    <ul>
-        <li>
-            Confirmed cases: 19,764,598
-        </li>
-        <li>
-            End of year hospitalized: 125,423
-        </li>
-        <li>
-            Deaths confirmed: 336,802
-        </li>
-        <li>
-            Confirmed cases: 19,764,598
-        </li>
-    </ul>
-    <em>
-        &ast;Numbers reported as of Dec 31st 2020
-    </em>
-</aside>
-    <!-- M2LO4 - Inline style -->
-    <footer style="color: #111D5E;">
+
+    <div class="container">
+        <div class="row">
+            <div id="main-title">
+                <h1>Year of Covid</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="numbers" class="column">
+                <!-- Side section containing covid statistics -->
+                <section class="inner-section">
+                    <h2>Covid 2020 Stats:&ast;</h2>
+                    <ul id="current-numbers">
+                        <li>
+                            Confirmed cases: 19,764,598
+                        </li>
+                        <li>
+                            End of year hospitalized: 125,423
+                        </li>
+                        <li>
+                            Deaths confirmed: 336,802
+                        </li>
+                        <li>
+                            Confirmed cases: 19,764,598
+                        </li>
+                    </ul>
+                    <em>
+                        &ast;Numbers reported as of Dec 31st 2020
+                    </em>
+                </section>
+            </div>
+
+            <!-- Site overview section -->
+            <div id="main" class="column">
+                <section class="inner-section">
+
+                    <figure id="lead-img">
+                        <img src="elena-mozhvilo-I9CwZchCIqA-unsplash-1024.jpg" alt="Header Image">
+                        <figcaption>
+                            <p class="image-caption">
+                                <em>
+                                    Image by Elena Mozhvilo via <a href="https://unsplash.com/">unsplash</a>.
+                                </em>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <article>
+                        <p>
+                            A look at the pandemic and how it has spread across the United States.
+                        </p>
+                    </article>
+                </section>
+            </div>
+
+            <div id="section-right" class="column">
+                <section class="inner-section">
+                    <h2>section 3</h2>
+                    <article>
+                        <p>
+                            A look at the pandemic and how it has spread across the United States.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
         Year of Covid - Carlo Santos - CIS 155 - Winter 2021 <br>
-        <!-- M1LO13 - Targeted location using ids -->
         Back to <a href="#home-nav">top</a>&uArr;
     </footer>
 </body>
