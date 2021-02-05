@@ -5,18 +5,22 @@ styles css file is used to format the index and about page's styling and format.
 Color pallete via: https: //colorhunt.co/palette/226115
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-    
+
     background-color: #94b5c0;
     color: black;
     font-family: 'Roboto',
-    sans-serif;
+        sans-serif;
 }
 
 nav {
     background-color: #f6f6f6;
     margin: 0 auto;
     padding: 2em;
+    width: 100%;
+    /* M3LO9 Demonstrate fixed, */
+    position: fixed;
 }
 
 nav>ul>li>a:link {
@@ -82,11 +86,7 @@ a[href="#home-nav"] {
     text-decoration: none;
 }
 
-/* nav#home-nav ul {
-    
-} */
-
-figcaption > p > em > a:link{
+figcaption>p>em>a:link {
     color: #c7ffd8;
 }
 
@@ -114,11 +114,15 @@ figure.lead-img img {
     height: auto;
 }
 
-figcaption > p {
+figcaption>p {
     margin-top: 0;
 }
 
-#info-lead-img{
+#about-lead-img {
+    /* M3LO11 Demonstrate -prefix- style browser extensions */
+    -webkit-transform: rotate(180deg);
+    /* M4LO8 Demonstrate the use of transformations for 2D */
+    transform: rotate(180deg);
     /* M4LO6 Demonstrate the use of opacity/transparency for images */
     opacity: 0.4;
 }
@@ -139,16 +143,18 @@ div#section-right {
     display: inline-block;
     text-align: justify;
     vertical-align: top;
-} 
+}
 
 .container {
     width: 90%;
     margin: auto;
+    padding-top: 7em;
 }
 
 .inner-section {
     height: 100%;
     width: auto;
+    background-color: #98ded9;
 }
 
 div#main-title {
@@ -161,11 +167,29 @@ div#main-title {
 }
 
 /* M3LO2 Demonstrate floating elements */
-div.column {
+div.column-3 {
     float: left;
     width: 33.33%;
-    padding: .1em;
+    padding: 1em;
     /* height: 500px; */
+}
+
+div.column-2 {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    /* height: 500px; */
+}
+
+div.column-4 {
+    float: left;
+    width: 25%;
+    padding: 1em;
+    /* height: 500px; */
+}
+
+div.row {
+    padding-bottom: 1em;
 }
 
 div.row:after {
@@ -183,6 +207,7 @@ ul#current-numbers {
     list-style: none;
     text-align: left;
     padding: 0%;
+    margin-bottom: .5em;
 }
 
 ul#current-numbers li {
@@ -193,16 +218,34 @@ ul#current-numbers li {
     border-style: none none solid none;
 }
 
+.numbers>section>em {
+    color: #c70039;
+    font-size: 1em;
+}
+
+.about p {
+    font-size: 1.25em;
+    color: white;
+    /* M3LO10 Demonstrate */
+    overflow: auto;
+}
+
 ol#change-list {
     text-align: justify;
+    font-size: 1.25em;
+    color: white;
+}
+
+ol#change-list li {
+    margin: 1em;
 }
 
 .rounded {
-        border-color: white;
-        border-style: solid;
-        /* M4LO3 Demonstrate the use of rounded corners for borders */
-        border-radius: 20px 20px;
-        padding: 1em;
+    border-color: white;
+    border-style: solid;
+    /* M4LO3 Demonstrate the use of rounded corners for borders */
+    border-radius: 20px 20px;
+    padding: 1em;
 }
 
 #overview {
@@ -213,11 +256,42 @@ ol#change-list {
     background-repeat: no-repeat;
     background-size: cover;
     /* opacity: 0.5; */
-    
+
 }
 
 #overview p {
     background-color: white;
     opacity: 0.8;
     line-height: 1.5;
+    padding: .5em;
+}
+
+/* M3LO8B Demonstrate relative positioning */
+.img-blurb {
+    color: #111d5e;
+    font-size: 1em;
+    background-color: white;
+    opacity: 0.9;
+    width: 10em;
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+
+}
+
+.contact {
+    background-color: chartreuse;
+    width: 8em;
+    font-size: 1.5em;
+    text-align: center;
+    margin: .5em;
+    float: right;
+    /* M3LO9 Demonstrate fixed, */
+    position: fixed;
+    top: 125px;
+    right: 50px;
+}
+
+.contact a{
+    text-decoration: none;
 }
