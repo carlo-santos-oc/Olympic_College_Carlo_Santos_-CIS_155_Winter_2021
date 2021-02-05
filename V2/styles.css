@@ -6,6 +6,7 @@ Color pallete via: https: //colorhunt.co/palette/226115
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
+    
     background-color: #94b5c0;
     color: black;
     font-family: 'Roboto',
@@ -13,9 +14,9 @@ body {
 }
 
 nav {
-    background-color: #c70039;
+    background-color: #f6f6f6;
     margin: 0 auto;
-    padding: 1.2em;
+    padding: 2em;
 }
 
 nav>ul>li>a:link {
@@ -36,7 +37,7 @@ nav>ul {
 
 nav>ul>li {
     font-size: 1.5em;
-    padding-right: 1.5em;
+    padding-right: 2em;
     display: inline;
     text-shadow: 1px 1px #1687a7;
 }
@@ -52,7 +53,9 @@ article {
 
 footer {
     color: white;
-    background-color: #c70039;
+    padding: 1.5em;
+    /* M4LO4 Demonstrate the use of gradients */
+    background: linear-gradient(rgb(53, 11, 64), rgb(173, 108, 128));
 }
 
 .image-caption {
@@ -63,9 +66,16 @@ aside {
     color: white;
 }
 
+
 div#main-title h1 {
     font-size: 4em;
+    /* M4LO5 Demonstrate the use of text or box shadowing */
     text-shadow: 4px 4px #111d5e;
+}
+
+.sub-header {
+    font-size: 1.75em;
+    text-align: center;
 }
 
 a[href="#home-nav"] {
@@ -140,9 +150,12 @@ div#main-title {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
     text-align: center;
 }
 
+/* M3LO2 Demonstrate floating elements */
 div.column {
     float: left;
     width: 33.33%;
@@ -153,6 +166,7 @@ div.column {
 div.row:after {
     content: "";
     display: table;
+    /* M3LO3 Demonstrate a clearing floats */
     clear: both;
 }
 
@@ -172,4 +186,33 @@ ul#current-numbers li {
     padding: .5em 0 .5em 0;
     border-color: white;
     border-style: none none solid none;
+}
+
+ol#change-list {
+    text-align: justify;
+}
+
+.rounded {
+        border-color: white;
+        border-style: solid;
+        /* M4LO3 Demonstrate the use of rounded corners for borders */
+        border-radius: 20px 20px;
+        padding: 1em;
+}
+
+#overview {
+    color: black;
+    /* M4LO2 Demonstrate the use of background images */
+    background-image: url(23336.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+    
+}
+
+#overview p {
+    background-color: white;
+    opacity: 0.8;
+    line-height: 1.5;
 }
