@@ -102,14 +102,14 @@ article>p::first-letter {
     font-size: 2em;
 }
 
-figure#lead-img {
+figure.lead-img {
     width: 100%;
     height: auto;
     margin: auto;
     padding: .75em;
 }
 
-figure#lead-img img {
+figure.lead-img img {
     width: 100%;
     height: auto;
 }
@@ -118,7 +118,12 @@ figcaption > p {
     margin-top: 0;
 }
 
-div#numbers {
+#info-lead-img{
+    /* M4LO6 Demonstrate the use of opacity/transparency for images */
+    opacity: 0.4;
+}
+
+div.numbers {
     display: inline-block;
     text-align: justify;
     vertical-align: top;
