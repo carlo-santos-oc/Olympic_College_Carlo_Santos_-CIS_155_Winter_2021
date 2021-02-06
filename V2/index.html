@@ -2,9 +2,18 @@
 <!-- Name: Carlo Santos
      Project V2
      02-02-2021 
-     index html file is landing page of website. 
+     
      It will have overview information of the purpose and content
      of the website
+     Information cite:
+     VOX Media - https://www.youtube.com/watch?v=FVIGhz3uwuQ&t=303s
+     CDC -https://www.cdc.gov/
+     National Foundation for Infectious Disease - https://www.nfid.org/
+     World Health Organization - https://www.who.int/
+     John Hopkins University - https://coronavirus.jhu.edu/
+     Ted Ed - https://www.youtube.com/watch?v=D9tTi-CDjDU&t=131s
+     CBS - https://www.youtube.com/watch?v=0n7pIVS3t08&t=339s
+
      -->
 <html lang="en">
 
@@ -19,7 +28,7 @@
 
 <body>
     <!-- Main navigation bar -->
-    <nav id="home-nav">
+    <nav>
         <ul>
             <li>
                 <a href="index.html">Home</a>
@@ -38,14 +47,15 @@
     <!-- M3LO6 Demonstrate formatting a grid -->
     <div class="container">
         <!-- M3LO9 Demonstrate fixed, -->
-    <div class="contact rounded">
-        <p>
-            <a target="_blank" href="https://www.kingcounty.gov/depts/health/covid-19/data/race-ethnicity.aspx">Latest
-                News</a>
-        </p>
-    </div>
+        <div class="contact rounded">
+            <p>
+                <a target="_blank"
+                    href="https://www.kingcounty.gov/depts/health/covid-19/data/race-ethnicity.aspx">Local
+                    News</a>
+            </p>
+        </div>
         <div class="row">
-            <div id="main-title">
+            <div class="main-title">
                 <h1>Year of Covid</h1>
             </div>
         </div>
@@ -54,7 +64,7 @@
                 <!-- Side section containing covid statistics -->
                 <section class="inner-section rounded">
                     <h2 class="sub-header">Covid 2020 Stats:&ast;</h2>
-                    <ul id="current-numbers">
+                    <ul class="current-numbers">
                         <li>
                             Confirmed cases: 19,764,598
                         </li>
@@ -75,17 +85,16 @@
             </div>
 
             <!-- Site overview section -->
-            <div id="main" class="column-3">
-                <section class="inner-section">
+            <div class="column-3 main">
+                <section>
 
-                    <!-- M4LO1 Demonstrate the use of figure boxes ( -->
+                    <!-- M4LO1 Demonstrate the use of figure boxes  -->
                     <figure class="lead-img">
                         <img src="21074.jpg" alt="Header Image">
                         <figcaption>
                             <p class="image-caption">
                                 <em>
-                                    Image by <a
-                                        href="https://www.cdc.gov/media/subtopic/images.htm">CDC</a>.
+                                    Image by <a href="https://www.cdc.gov/media/subtopic/images.htm">CDC</a>.
                                 </em>
                             </p>
                         </figcaption>
@@ -97,8 +106,8 @@
                 </section>
             </div>
 
-            <div id="section-right" class="column-3">
-                <section class="inner-section">
+            <div class="column-3 section-right">
+                <section>
                     <article id="overview" class="rounded">
                         <h2 class="sub-header">Overview</h2>
                         <p>

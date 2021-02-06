@@ -4,7 +4,13 @@ Project V1 01-22-2021
 styles css file is used to format the index and about page's styling and format.
 Color pallete via: https: //colorhunt.co/palette/226115
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
 
@@ -14,6 +20,7 @@ body {
         sans-serif;
 }
 
+/* Nav styling */
 nav {
     background-color: #f6f6f6;
     margin: 0 auto;
@@ -46,20 +53,24 @@ nav>ul>li {
     text-shadow: 1px 1px #1687a7;
 }
 
-h1 {
-    color: #c70039;
-}
-
-article {
-    color: white;
-    font-size: 1em;
-}
+/* Header and Footer styling */
 
 footer {
     color: white;
     padding: 1.5em;
     /* M4LO4 Demonstrate the use of gradients */
     background: linear-gradient(rgb(53, 11, 64), rgb(173, 108, 128));
+}
+
+h1 {
+    color: #c70039;
+}
+
+/* Content styling */
+
+article {
+    color: white;
+    font-size: 1em;
 }
 
 .image-caption {
@@ -70,8 +81,7 @@ aside {
     color: white;
 }
 
-
-div#main-title h1 {
+div.main-title h1 {
     font-size: 4em;
     /* M4LO5 Demonstrate the use of text or box shadowing */
     text-shadow: 4px 4px #111d5e;
@@ -80,10 +90,10 @@ div#main-title h1 {
 .sub-header {
     font-size: 1.75em;
     text-align: center;
-}
-
-a[href="#home-nav"] {
-    text-decoration: none;
+    background-color: white;
+    opacity: 0.9;
+    padding: .25em;
+    border-radius: 20px;
 }
 
 figcaption>p>em>a:link {
@@ -127,37 +137,13 @@ figcaption>p {
     opacity: 0.4;
 }
 
-div.numbers {
-    display: inline-block;
-    text-align: justify;
-    vertical-align: top;
-}
-
-div#main {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-}
-
-div#section-right {
-    display: inline-block;
-    text-align: justify;
-    vertical-align: top;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-    padding-top: 7em;
-}
-
 .inner-section {
     height: 100%;
     width: auto;
     background-color: #98ded9;
 }
 
-div#main-title {
+div.main-title {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -166,51 +152,14 @@ div#main-title {
     text-align: center;
 }
 
-/* M3LO2 Demonstrate floating elements */
-div.column-3 {
-    float: left;
-    width: 33.33%;
-    padding: 1em;
-    /* height: 500px; */
-}
-
-div.column-2 {
-    float: left;
-    width: 50%;
-    padding: 1em;
-    /* height: 500px; */
-}
-
-div.column-4 {
-    float: left;
-    width: 25%;
-    padding: 1em;
-    /* height: 500px; */
-}
-
-div.row {
-    padding-bottom: 1em;
-}
-
-div.row:after {
-    content: "";
-    display: table;
-    /* M3LO3 Demonstrate a clearing floats */
-    clear: both;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-ul#current-numbers {
+ul.current-numbers {
     list-style: none;
     text-align: left;
     padding: 0%;
     margin-bottom: .5em;
 }
 
-ul#current-numbers li {
+ul.current-numbers li {
     color: #111d5e;
     font-size: 1.5em;
     padding: .5em 0 .5em 0;
@@ -223,47 +172,63 @@ ul#current-numbers li {
     font-size: 1em;
 }
 
+.about {
+    background-color: #98ded9;
+}
+
 .about p {
     font-size: 1.25em;
-    color: white;
+    color: #161d6f;
     /* M3LO10 Demonstrate */
     overflow: auto;
+}
+
+.info {
+    background-color: white;
+    color: #111d5e;
+    font-family: 'Nunito Sans',
+        sans-serif;
+    border-style: solid;
+    border-color: #c70039;
+    border-radius: 20px 20px;
+    padding: 1em;
+}
+
+.info p {
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 ol#change-list {
     text-align: justify;
     font-size: 1.25em;
-    color: white;
+    color: #161d6f;
 }
 
 ol#change-list li {
     margin: 1em;
 }
 
-.rounded {
-    border-color: white;
-    border-style: solid;
-    /* M4LO3 Demonstrate the use of rounded corners for borders */
-    border-radius: 20px 20px;
-    padding: 1em;
-}
-
 #overview {
-    color: black;
+    color: #161d6f;
     /* M4LO2 Demonstrate the use of background images */
     background-image: url(23336.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.5; */
-
 }
 
 #overview p {
     background-color: white;
+    font-size: 1em;
+    font-weight: bolder;
     opacity: 0.8;
     line-height: 1.5;
-    padding: .5em;
+    padding: .75em;
+    border-radius: 20px;
+    margin-top: .5em;
+
 }
 
 /* M3LO8B Demonstrate relative positioning */
@@ -292,6 +257,71 @@ ol#change-list li {
     right: 50px;
 }
 
-.contact a{
+.contact a {
     text-decoration: none;
+}
+
+/* Grid styling */
+
+/* M3LO2 Demonstrate floating elements */
+
+div.column-3 {
+    float: left;
+    width: 33.33%;
+    padding: 1em;
+}
+
+div.column-2 {
+    float: left;
+    width: 50%;
+    padding: 1em;
+}
+
+div.column-4 {
+    float: left;
+    width: 25%;
+    padding: 1em;
+}
+
+div.numbers {
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+}
+
+div.main {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+div.section-right {
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 7em;
+}
+
+div.row {
+    padding-bottom: 1em;
+}
+
+div.row:after {
+    content: "";
+    display: table;
+    /* M3LO3 Demonstrate a clearing floats */
+    clear: both;
+}
+
+.rounded {
+    border-color: white;
+    border-style: solid;
+    /* M4LO3 Demonstrate the use of rounded corners for borders */
+    border-radius: 20px 20px;
+    padding: 1em;
 }
