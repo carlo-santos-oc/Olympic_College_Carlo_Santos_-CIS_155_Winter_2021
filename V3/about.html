@@ -23,8 +23,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="icon" href="iconmonstr-virus-14.svg">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/flex.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -47,15 +48,15 @@
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="flex-row">
             <div class="main-title">
                 <h1>About</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="flex-row">
 
             <!-- Site overview section -->
-            <div class="column-2 main">
+            <div class="flex-col main">
                 <section class="about rounded">
                     <p>
                         Carlo Santos
@@ -122,13 +123,30 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            02-11-21:
+                            <ul>
+                                <li>
+                                    Transfered build to V3 directory
+                                </li>
+                                <li>
+                                    created new directories for css and images
+                                </li>
+                                <li>
+                                    created flex.css file for flex box styling
+                                </li>
+                                <li>
+                                    successully created responsive design for mobile
+                                </li>
+                            </ul>
+                        </li>
                     </ol>
                 </section>
             </div>
 
-            <div class="column-2 section-right">
+            <div class="flex-col section-right">
                 <figure class="lead-img">
-                    <img id="about-lead-img" src="23354.jpg" alt="Header Image">
+                    <img id="about-lead-img" src="img/23354.jpg" alt="Header Image">
                     <figcaption>
                         <p class="image-caption">
                             <em>
