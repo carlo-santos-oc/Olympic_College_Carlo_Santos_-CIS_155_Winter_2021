@@ -25,12 +25,12 @@ body {
 }
 
 /* Nav styling */
+
 nav {
     background-color: #f6f6f6;
     margin: 0 auto;
     padding: 2em;
     width: 100%;
-    /* M3LO9 Demonstrate fixed, */
     position: fixed;
     z-index: 20;
 }
@@ -67,7 +67,6 @@ footer {
     height: 4rem;
     color: white;
     padding: 1.5em;
-    /* M4LO4 Demonstrate the use of gradients */
     background: linear-gradient(rgb(53, 11, 64), rgb(173, 108, 128));
 }
 
@@ -92,7 +91,6 @@ aside {
 
 div.main-title h1 {
     font-size: 4em;
-    /* M4LO5 Demonstrate the use of text or box shadowing */
     text-shadow: 4px 4px #111d5e;
 }
 
@@ -125,7 +123,6 @@ figure.lead-img {
     width: 100%;
     height: auto;
     margin: auto;
-    /* padding: .75em; */
 }
 
 figure.lead-img img {
@@ -138,11 +135,8 @@ figcaption>p {
 }
 
 #about-lead-img {
-    /* M3LO11 Demonstrate -prefix- style browser extensions */
     -webkit-transform: rotate(180deg);
-    /* M4LO8 Demonstrate the use of transformations for 2D */
     transform: rotate(180deg);
-    /* M4LO6 Demonstrate the use of opacity/transparency for images */
     opacity: 0.4;
 }
 
@@ -191,8 +185,6 @@ ul.current-numbers li {
     font-size: 1.25em;
     text-align: center;
     color: #161d6f;
-    /* M3LO10 Demonstrate */
-    overflow: auto;
 }
 
 .info {
@@ -225,7 +217,6 @@ ol#change-list li {
 
 article#overview {
     color: #161d6f;
-    /* M4LO2 Demonstrate the use of background images */
     background-image: url(../img/23336.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -245,7 +236,6 @@ article#overview p {
 
 }
 
-/* M3LO8B Demonstrate relative positioning */
 .img-blurb {
     color: #111d5e;
     font-size: 1em;
@@ -266,7 +256,6 @@ article#overview p {
     margin: .5em;
     padding: 1em;
     float: right;
-    /* M3LO9 Demonstrate fixed, */
     position: fixed;
     top: 125px;
     right: 50px;
@@ -276,45 +265,9 @@ article#overview p {
     text-decoration: none;
 }
 
-/* Grid styling */
-
-/* M3LO2 Demonstrate floating elements */
-
-/* div.column-3 {
-    float: left;
-    width: 33.33%;
-    padding: 1em;
-}
-
-div.column-2 {
-    float: left;
-    width: 50%;
-    padding: 1em;
-}
-
-div.column-4 {
-    float: left;
-    width: 25%;
-    padding: 1em;
-} */
-
 div.numbers {
-    /* display: inline-block; */
     text-align: justify;
-    /* vertical-align: top; */
 }
-
-/* div.main {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-}
-
-div.section-right {
-    display: inline-block;
-    text-align: justify;
-    vertical-align: top;
-} */
 
 .container {
     width: 90%;
@@ -322,30 +275,22 @@ div.section-right {
     padding-top: 7em;
 }
 
-
-/* div.row {
-    padding-bottom: 1em;
-} */
-
 .rounded {
     border-color: white;
     border-style: solid;
-    /* M4LO3 Demonstrate the use of rounded corners for borders */
     border-radius: 20px 20px;
-    /* padding: 1em; */
 }
 
+/* M6LO7 Demonstrate how to format a table with CSS. Sets table styling */
 .vaccine-table {
-    text-align: left;
+    text-align: center;
     vertical-align: top;
     border-collapse: collapse;
     border: 1px solid black;
-    border-radius: 10px 10px;
     width: 100%;
 }
 
 .vaccine-table th {
-    text-align: center;
     padding: .5em;
 }
 .vaccine-table td{
@@ -353,6 +298,14 @@ div.section-right {
     padding: .5em;
     margin: 0;
 }
+.vaccine-table .table-footer {
+    text-align: left;
+}
+
+/* .table-col {
+    flex: 2;
+} */
+
 @media (max-width: 414px) {
 
     .container {

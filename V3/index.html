@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year of Covid</title>
-    <link rel="icon" href="iconmonstr-virus-14.svg">
+    <link rel="icon" href="img/iconmonstr-virus-14.svg">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/flex.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -47,9 +47,8 @@
             </li>
         </ul>
     </nav>
-    <!-- M3LO6 Demonstrate formatting a grid -->
+
     <div class="container">
-        <!-- M3LO9 Demonstrate fixed, -->
         <div class="contact rounded">
             <p>
                 <a target="_blank" href="https://www.kingcounty.gov/depts/health/covid-19/data.aspx">Local
@@ -96,7 +95,6 @@
             <div class="flex-col main">
                 <section>
 
-                    <!-- M4LO1 Demonstrate the use of figure boxes  -->
                     <figure class="lead-img">
                         <img src="img/21074.jpg" alt="Header Image">
                         <figcaption>
@@ -110,7 +108,7 @@
                 </section>
             </div>
 
-            <div class="flex-col section-right">
+            <div class="flex-col">
                 <section>
                     <article id="overview" class="rounded">
                         <h2 class="sub-header">Overview</h2>
@@ -131,12 +129,14 @@
 
             </div>
             <!-- Site overview section -->
-            <div class="flex-col main">
+            <div class="flex-col-2 table-col">
                 <section>
                     <article class="info">
                         <h2 class="sub-header">COVID-19</h2>
+                        <!-- M6LO3 Demonstrate how to create a table. This table is used for displaying vaccination data from states -->
                         <table class="vaccine-table">
                             <tr>
+                                <!-- M6LO4 Demonstrate how to span multiple rows -->
                                 <th colspan="3">
                                     COVID Vaccination Count
                                 </th>
@@ -207,7 +207,15 @@
                                     77,029
                                 </td>
                             </tr>
-
+                            <tr>
+                                <td colspan="3" class="table-footer">
+                                    <small><em>
+                                            Data from <a target="_blank"
+                                                href="https://coronavirus.jhu.edu/vaccines/us-states">John Hopkins
+                                                University</a>
+                                        </em></small>
+                                </td>
+                            </tr>
                         </table>
                     </article>
                 </section>
