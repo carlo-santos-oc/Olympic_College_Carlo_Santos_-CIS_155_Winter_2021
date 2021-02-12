@@ -302,9 +302,9 @@ div.numbers {
     text-align: left;
 }
 
-/* .table-col {
-    flex: 2;
-} */
+.hamburger {
+    display: none;
+}
 
 @media (max-width: 414px) {
 
@@ -315,5 +315,25 @@ div.numbers {
 
     .contact {
         display: none;
+    }
+    
+    .hamburger {
+        display: block;
+        width: 2em;
+    }
+
+    nav>ul>li {
+        display: block;
+        margin-bottom: .5em;
+        font-size: 1.2em;
+    }
+
+    ul.sub-menu {
+        display: none;
+        
+    }
+
+    a.hamburger:hover+ul.sub-menu, ul.sub-menu:hover {
+        display: block;
     }
 }

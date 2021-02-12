@@ -14,7 +14,8 @@
      Ted Ed - https://www.youtube.com/watch?v=D9tTi-CDjDU&t=131s
      CBS - https://www.youtube.com/watch?v=0n7pIVS3t08&t=339s
 
-     Favicon - https://iconmonstr.com/virus-14-svg/
+     Favicons - https://iconmonstr.com/virus-14-svg/
+                https://freeicons.io/vector-and-svg-logos-01/hamburger-menu-icon-11554
      -->
 <html lang="en">
 
@@ -32,7 +33,12 @@
 <body>
     <!-- Main navigation bar -->
     <nav>
-        <ul>
+        <!-- M5LO4 Use CSS for pull-down menus. This hamburger icon shows in mobile and when hovered on it displays the nav in vertical arrangement -->
+        <a class="hamburger" href="#">
+            <img src="img/hamburger.svg" alt="hamburger icon">
+        </a>
+
+        <ul class="sub-menu">
             <li>
                 <a href="index.html">Home</a>
             </li>
@@ -132,7 +138,7 @@
             <div class="flex-col-2 table-col">
                 <section>
                     <article class="info">
-                        <h2 class="sub-header">COVID-19</h2>
+                        <!-- <h2 class="sub-header">COVID-19</h2> -->
                         <!-- M6LO3 Demonstrate how to create a table. This table is used for displaying vaccination data from states -->
                         <table class="vaccine-table">
                             <tr>
