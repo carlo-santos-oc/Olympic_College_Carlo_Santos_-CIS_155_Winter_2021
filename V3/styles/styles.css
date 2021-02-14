@@ -76,10 +76,10 @@ h1 {
 
 /* Content styling */
 
-article {
+/* article {
     color: white;
     font-size: 1em;
-}
+} */
 
 .image-caption {
     color: white;
@@ -259,6 +259,7 @@ article#overview p {
     position: fixed;
     top: 125px;
     right: 50px;
+    z-index: 10;
 }
 
 .contact a {
@@ -293,11 +294,13 @@ div.numbers {
 .vaccine-table th {
     padding: .5em;
 }
-.vaccine-table td{
+
+.vaccine-table td {
     border: 1px solid black;
     padding: .5em;
     margin: 0;
 }
+
 .vaccine-table .table-footer {
     text-align: left;
 }
@@ -316,7 +319,7 @@ div.numbers {
     .contact {
         display: none;
     }
-    
+
     .hamburger {
         display: block;
         width: 2em;
@@ -330,10 +333,134 @@ div.numbers {
 
     ul.sub-menu {
         display: none;
-        
+
     }
 
-    a.hamburger:hover+ul.sub-menu, ul.sub-menu:hover {
+    a.hamburger:hover+ul.sub-menu,
+    ul.sub-menu:hover {
         display: block;
     }
+
+    nav>ul>li {
+        font-size: 1em;
+    }
+
+    div.main-title h1 {
+        font-size: 3em;
+        text-shadow: 3px 3px #111d5e;
+    }
+
+    .sub-header {
+        font-size: 1.25em;
+    }
+
+    article>p::first-letter {
+        font-size: 1.25em;
+    }
+
+    ul.current-numbers li {
+        font-size: 1em;
+    }
+
+    .numbers>section>em {
+        font-size: .5em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    article#overview p {
+        font-size: .75em;
+    }
+
+    .img-blurb {
+        font-size: .5em;
+        opacity: 0.9;
+        width: 10em;
+        position: relative;
+        bottom: 100px;
+        left: 15px;
+
+    }
+
+    ol#change-list {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 769px) {
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding-top: 5em;
+    }
+
+    nav>ul>li {
+        font-size: 1em;
+    }
+
+    div.main-title h1 {
+        font-size: 3em;
+        text-shadow: 3px 3px #111d5e;
+    }
+
+    .sub-header {
+        font-size: 1em;
+    }
+
+    article>p::first-letter {
+        font-size: 1.25em;
+    }
+
+    ul.current-numbers li {
+        font-size: .75em;
+    }
+
+    .numbers>section>em {
+        font-size: .5em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    article#overview p {
+        font-size: .75em;
+    }
+
+    .img-blurb {
+        font-size: .5em;
+        opacity: 0.9;
+        width: 10em;
+        position: relative;
+        bottom: 100px;
+        left: 15px;
+
+    }
+
+    .contact {
+        width: 8em;
+        font-size: 1em;
+        text-align: center;
+        margin: .5em;
+        padding: 1em;
+        float: right;
+        position: fixed;
+        top: 125px;
+        right: 50px;
+        z-index: 10;
+    }
+
+    ol#change-list {
+        font-size: 1em;
+    }
+
+    .info p {
+        text-indent: 1em;
+        text-align: justify;
+        line-height: 1;
+    }
+
 }
