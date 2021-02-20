@@ -462,4 +462,8 @@ div.numbers {
         line-height: 1;
     }
 
+    .contact {
+        display: none;
+    }
+
 }
