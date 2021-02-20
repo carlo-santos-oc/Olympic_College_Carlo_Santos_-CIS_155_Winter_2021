@@ -166,7 +166,7 @@ ul.current-numbers li {
     border-style: none none solid none;
 }
 
-.numbers>section>em {
+.numbers>div>em {
     color: #c70039;
     font-size: 1em;
 }
@@ -357,7 +357,7 @@ div.numbers {
         font-size: 1em;
     }
 
-    .numbers>section>em {
+    .numbers>div>em {
         font-size: .5em;
     }
 
@@ -388,7 +388,7 @@ div.numbers {
     }
 }
 
-@media (min-width: 481px) and (max-width: 769px) {
+@media (min-width: 481px) and (max-width: 812px) {
 
     .container {
         width: 90%;
@@ -417,7 +417,7 @@ div.numbers {
         font-size: .75em;
     }
 
-    .numbers>section>em {
+    .numbers>div>em {
         font-size: .5em;
     }
 
