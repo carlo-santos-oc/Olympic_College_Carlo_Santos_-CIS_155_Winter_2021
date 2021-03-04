@@ -357,8 +357,43 @@ audio:hover {
     }
 }
 
+/* M7LO11 Demonstrate how to format a form with CSS I have styled the labels, inputs and buttons in this section */
 /* form style */
 
+label {
+    color: #111d5e;
+    font-family: 'Nunito Sans',
+    sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input[type=text] {
+    font-family: 'Nunito Sans',
+    sans-serif;
+    width: 300px;
+    margin-top: 1em;
+}
+
+input[type=text]:focus {
+    background-color: lightcyan;
+}
+
+input[type=submit] {
+    font-family: 'Nunito Sans',
+    sans-serif;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: lightcyan;
+}
+
+input[type=reset] {
+    font-family: 'Nunito Sans',
+        sans-serif;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: lightcyan;
+}
 
 
 @media (max-width: 414px) {
@@ -442,6 +477,11 @@ audio:hover {
 
     footer {
         font-size: 0.7em;
+    }
+
+    input[type=text] {
+        width: 100%;
+        margin-top: 1em;
     }
 }
 

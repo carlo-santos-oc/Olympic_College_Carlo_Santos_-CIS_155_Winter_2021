@@ -68,24 +68,15 @@
                         <fieldset id="patientInfo">
                             <legend>Testing Survey</legend>
                             <!-- M7LO5 Demonstrate the use of a text box in a form -->
-                            <div class="formRow">
-                                <label for="name">Name*</label>
-                                <input name="patientName" id="name" type="text" placeholder="first and last name">
+                            <div class="about">
+                                <label for="name">Name*</label><br>
+                                <input name="patientName" id="name" type="text" placeholder="First and last name"
+                                    required>
                             </div>
 
-                           <!-- M7LO7 Demonstrate the use of radio buttons in a form -->
-                           <div class="formRow">
-                               <label>Do you have symptoms?</label>
-                               <fieldset class="optGroup">
-                                   <label for="fYes">Yes</label>
-                                   <input name="symptoms" id="fYes" value="yes" type="radio">
-                                   <label for="fNo">No</label>
-                                   <input name="symptoms" id="fNo" value="no" type="radio">
-                               </fieldset>
-                           </div>
-                           <!-- M7LO8 Demonstrate the use of a selection list in a form -->
-                            <div class="formRow">
-                                <label for="ageGroup">What is your age group?</label>
+                            <!-- M7LO8 Demonstrate the use of a selection list in a form -->
+                            <div class="about">
+                                <label for="ageGroup">What is your age group?</label><br>
                                 <input name="ageGroup" id="ageGroup" type="text" list="age">
                                 <datalist id="age">
                                     <option value="85 or older"></option>
@@ -98,61 +89,22 @@
                                     <option value="18 and under"></option>
                                 </datalist>
                             </div>
+
+                            <!-- M7LO7 Demonstrate the use of radio buttons in a form -->
+                            <div class="about">
+                                <label>Do you have symptoms?</label><br>
+                                <label for="sYes">Yes</label>
+                                <input name="symptoms" id="fYes" value="yes" type="radio">
+                                <label for="sNo">No</label>
+                                <input name="symptoms" id="fNo" value="no" type="radio">
+                            </div>
                         </fieldset>
 
-                                <!-- <legend>Share Your Experience at Red Ball Pizza</legend> -->
-
-                                <!-- <div class="formRow">
-                                <label for="visit">Date of visit</label>
-                                <input name="visitDate" id="visit" type="date">
-                            </div>
-
-                            <div class="formRow">
-                                <label for="order">Order type</label>
-                                <select name="orderType" id="order">
-                                    <option value="order1">Carry out</option>
-                                    <option value="order2">Delivery</option>
-                                    <option value="order3" selected>Dine in</option>
-                                    <option value="order4">Take 'n Bake</option>
-                                </select>
-                            </div> -->
-                            
-
-                                <!-- <div class="formRow">
-                                <label>Was your order correct?</label>
-                                <fieldset class="optGroup">
-                                    <label for="cYes">Yes</label>
-                                    <input name="oCorrect" id="cYes" value="yes" type="radio">
-                                    <label for="cNo">No</label>
-                                    <input name="oCorrect" id="cNo" value="no" type="radio">
-                                </fieldset>
-                            </div>
-
-                            <div class="formRow">
-                                <label>Was your food hot?</label>
-                                <fieldset class="optGroup">
-                                    <label for="hYes">Yes</label>
-                                    <input name="foodHot" id="hYes" value="yes" type="radio">
-                                    <label for="hNo">No</label>
-                                    <input name="foodHot" id="hNo" value="no" type="radio">
-                                </fieldset>
-                            </div> -->
-
-                                <!-- <div class="formRow">
-                                <label for="rangeBox">Rate the overall service <br> (0=poor; 10=great</label>
-                                0
-                                <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0"
-                                    max="10">
-                                10
-                            </div>
-
-                            <label for="commBox">Tell us more about your experience!</label>
-                            <textarea name="custExp" id="commBox"></textarea> -->
-                            <!-- M7LO10 Demonstrate the use of a submit button in a form -->
-                            <div id="buttons">
-                                <input type="submit" value="submit">
-                                <input type="reset" value="Cancel">
-                            </div>
+                        <!-- M7LO10 Demonstrate the use of a submit button in a form -->
+                        <div id="buttons">
+                            <input type="submit" value="submit">
+                            <input type="reset" value="Cancel">
+                        </div>
                     </form>
                 </div>
             </div>

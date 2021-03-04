@@ -82,25 +82,20 @@
 
     <script>
         const params = new URLSearchParams(document.location.search.substring(1));
-        console.log(params);
         const name = params.get("patientName");
-        console.log(name);
         const symptoms = params.get("symptoms");
-        console.log(symptoms);
 
         if (symptoms === 'yes') {
             const message =
                 `${name}: It is recommended that you get tested. Here is a map to a testing location closest to Olympic College.`;
-            console.log(message);
             const patientData = document.getElementById("patientData");
-            console.log(patientData);
             const pEl = document.createElement("p");
             const textNode = document.createTextNode(message);
             pEl.appendChild(textNode);
             patientData.appendChild(pEl);
         } else {
             const message = `${name}: If you are not feeling sick continue to practice social distancing. However if
-                you believe you have come in contact with someone who is sick testing is recommended. Here is a map to a
+                you believe you have come in contact with someone who is sick then testing is recommended. Here is a map to a
                 testing location closest to Olympic College.`;
             const patientData = document.getElementById("patientData");
             const pEl = document.createElement("p");
