@@ -24,10 +24,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year of Covid</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="numbers.js"></script>
     <link rel="icon" href="img/iconmonstr-virus-14.svg">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/flex.css">
     <link rel="stylesheet" href="styles/styles.css">
+    
 </head>
 
 <body>
@@ -74,26 +77,23 @@
                 <div class="inner-section rounded">
                     <h2 class="sub-header">Covid 2020 Stats:&ast;</h2>
                     <ul class="current-numbers">
-                        <li>
-                            Confirmed cases: 19864374
+                        <li id="positive">
+                            Positive cases: 19864374
                         </li>
-                        <li>
-                            Positive test increase: 226246
+                        <li id="hospitalizedCurrently">
+                            Currently hospitalized: 226246
                         </li>
-                        <li>
-                            End of year hospitalized: 125423
+                        <li id="hospitalizedCumulative">
+                            Total hospitalization: 125423
                         </li>
-                        <li>
-                            Total hospitalized: 686115
+                        <li id="onVentilatorCurrently">
+                            Currently on Ventilator: 686115
                         </li>
-                        <li>
-                            On ventilator: 8004
-                        </li>
-                        <li>
-                            Deaths confirmed: 336802
+                        <li id="death">
+                            Deaths confirmed: 8004
                         </li>
                     </ul>
-                    <em>
+                    <em id="lastModified">
                         &ast;Numbers reported as of Dec 31st 2020
                     </em>
                 </div>
