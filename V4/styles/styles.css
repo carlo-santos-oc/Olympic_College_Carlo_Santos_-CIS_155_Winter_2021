@@ -98,6 +98,12 @@ div.main-title h1 {
     border-radius: 20px;
 }
 
+.rec-sub-header {
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 figcaption>p>em>a:link {
     color: #c7ffd8;
 }
@@ -182,6 +188,13 @@ ul.current-numbers li {
     color: #161d6f;
 }
 
+#podcast-blurb {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 25px;
+    padding: 1em;
+}
+
 .info {
     background-color: white;
     color: #111d5e;
@@ -255,6 +268,9 @@ article#overview p {
     top: 125px;
     right: 50px;
     z-index: 10;
+    /* M8LO10 Demonstrate a CSS animation or transition eases in local news div */
+    animation-timing-function: ease-in;
+    animation: mymove 5s;
 }
 
 .contact a {
@@ -277,7 +293,6 @@ div.numbers {
     border-radius: 20px 20px;
 }
 
-/* M6LO7 Demonstrate how to format a table with CSS. Sets table styling */
 .vaccine-table {
     text-align: center;
     vertical-align: top;
@@ -303,6 +318,48 @@ div.numbers {
 .hamburger {
     display: none;
 }
+
+iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    min-height: 500px;
+}
+
+/* M8LO12 Demonstrate how to format media with CSS. Changes width and height of media players. Also added a hover effect to the audio player */
+/* Audio and Video style */
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 100%;
+}
+
+audio:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(1px 1px 1px #1687a7);
+}
+
+/* animation */
+/* M8LO10 Demonstrate a CSS animation or transition eases in local news div */
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 1510px;
+    }
+}
+
+/* form style */
+
+
 
 @media (max-width: 414px) {
 

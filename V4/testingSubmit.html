@@ -62,17 +62,17 @@
         </div>
         <div class="flex-row">
 
-            <!-- Site overview section -->
             <div class="flex-col main">
                 <div id="patientData" class="about rounded">
-
+                    <h2 class="rec-sub-header">Recommendation</h2>
                 </div>
             </div>
 
-            <div class="flex-col section-right">
+            <div class="flex-col">
+                <!-- M8LO9 Demonstrate the use of the iframe element (HTML) -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d10764.55794371412!2d-122.64126125259139!3d47.58452891693013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x5490376488949471%3A0x88008f5b631df7bf!2sOlympic%20College%2C%20Chester%20Avenue%2C%20Bremerton%2C%20WA!3m2!1d47.575258!2d-122.63521259999999!4m5!1s0x549039eff3e55555%3A0xbe870fe6f6b23752!2scovid%20testing!3m2!1d47.595141999999996!2d-122.6303318!5e0!3m2!1sen!2sus!4v1614801806314!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
@@ -80,25 +80,35 @@
         Year of Covid - Carlo Santos - CIS 155 - Winter 2021
     </footer>
 
-        <script>
-            const params = new URLSearchParams(document.location.search.substring(1));
-            console.log(params);
-            const name = params.get("patientName");
-            console.log(name);
-            const symptoms = params.get("symptoms");
-            console.log(symptoms);
+    <script>
+        const params = new URLSearchParams(document.location.search.substring(1));
+        console.log(params);
+        const name = params.get("patientName");
+        console.log(name);
+        const symptoms = params.get("symptoms");
+        console.log(symptoms);
 
-            if(symptoms === 'yes'){
-                const message = `${name}, you should get tested. Here is a map to a testing location closest to Olympic College.`;
-                console.log(message);
-                const patientData = document.getElementById("patientData");
-                console.log(patientData);
-                const pEl = document.createElement("p");
-                const textNode = document.createTextNode(message);
-                pEl.appendChild(textNode);
-                patientData.appendChild(pEl);
-            }
-        </script>
+        if (symptoms === 'yes') {
+            const message =
+                `${name}: It is recommended that you get tested. Here is a map to a testing location closest to Olympic College.`;
+            console.log(message);
+            const patientData = document.getElementById("patientData");
+            console.log(patientData);
+            const pEl = document.createElement("p");
+            const textNode = document.createTextNode(message);
+            pEl.appendChild(textNode);
+            patientData.appendChild(pEl);
+        } else {
+            const message = `${name}: If you are not feeling sick continue to practice social distancing. However if
+                you believe you have come in contact with someone who is sick testing is recommended. Here is a map to a
+                testing location closest to Olympic College.`;
+            const patientData = document.getElementById("patientData");
+            const pEl = document.createElement("p");
+            const textNode = document.createTextNode(message);
+            pEl.appendChild(textNode);
+            patientData.appendChild(pEl);
+        }
+    </script>
 </body>
 
 </html>

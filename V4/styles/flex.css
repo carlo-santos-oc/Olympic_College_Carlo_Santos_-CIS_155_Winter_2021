@@ -1,12 +1,7 @@
-/* M5LO5 (Optional) Demonstrate the use of flexboxes. This css files has my main flex box styling. I have set up everything to mimic the column and row setings of
-my previous build
-*/
-
 * {
     box-sizing: border-box;
 }
 
-/* M5LO7 (Optional) Demonstrate use of properties of flexbox containers. I have set my flex container to my row. I have set the row to justyify a space between flex-col inside */
 .flex-row {
     display: -webkit-flex;
     display: flex;
@@ -17,7 +12,6 @@ my previous build
     margin-bottom: 2em;
 }
 
-/* M5LO6 (Optional) Demonstrate use of properties of flexbox items */
 .flex-col {
     flex: 1;
     padding: 1em;
@@ -51,7 +45,6 @@ my previous build
     width: 25%;
 }
 
-/* M5LO3 Use media queries to format a page differently for phones. This media query creates a single column display for my site */
 @media (max-width: 414px) {
 
     .container {
