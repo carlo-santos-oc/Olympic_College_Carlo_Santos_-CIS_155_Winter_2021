@@ -1,0 +1,89 @@
+/* M5LO5 (Optional) Demonstrate the use of flexboxes. This css files has my main flex box styling. I have set up everything to mimic the column and row setings of
+my previous build
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* M5LO7 (Optional) Demonstrate use of properties of flexbox containers. I have set my flex container to my row. I have set the row to justyify a space between flex-col inside */
+.flex-row {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row:last-of-type {
+    margin-bottom: 2em;
+}
+
+/* M5LO6 (Optional) Demonstrate use of properties of flexbox items */
+.flex-col {
+    flex: 1;
+    padding: 1em;
+}
+
+.flex-col-2 {
+    flex: 2;
+    padding: 1em;
+}
+
+.flex-col-3 {
+    flex: 3;
+    padding: 1em;
+}
+
+.flex-col-4 {
+    flex: 4;
+    padding: 1em;
+}
+
+.flex-row-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row-3 .flex-col {
+    width: 32%;
+}
+
+.flex-row-4 .flex-col {
+    width: 25%;
+}
+
+/* M5LO3 Use media queries to format a page differently for phones. This media query creates a single column display for my site */
+@media (max-width: 414px) {
+
+    .container {
+        width: 100%;
+        margin: auto;
+        padding-top: 7em;
+    }
+
+    .flex-row {
+        display: block;
+        margin: 0 1em 0 1em;
+    }
+
+    .flex-row>.flex-col {
+        display: block;
+        width: 100%;
+        padding: 1em 0 1em 0;
+    }
+
+    .flex-row-3 .flex-col {
+        width: 100%;
+    }
+
+    .flex-col-2 {
+        padding: 0;
+    }
+
+    .flex-col-3 {
+        padding: 0;
+    }
+
+    .flex-col-4 {
+        padding: 0;
+    }
+}
