@@ -1,4 +1,4 @@
-$.get("https://api.covidtracking.com/v1/us/current.json", function(data, status){
+$.get("https://api.covidtracking.com/v1/us/current.json", function(data){
     var positive = JSON.stringify(data[0].positive);
     var hospitalizedCurrently = JSON.stringify(data[0].hospitalizedCurrently);
     var hospitalizedCumulative = JSON.stringify(data[0].hospitalizedCumulative);
